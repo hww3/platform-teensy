@@ -28,7 +28,14 @@
     "zephyr": {
       "package": "framework-zephyr",
       "script": "builder/frameworks/zephyr.py"
-    }
+    },
+    "mbed-ce": {
+      "package": "framework-mbed-ce",
+      "script": "builder/frameworks/mbed-ce.py",
+      "description": "Community edition of Mbed OS, an open-source operating system designed for the Internet of Things.",
+      "homepage": "https://mbed-ce.dev",
+      "title": "Mbed CE"
+     },
   },
   "packages": {
     "toolchain-atmelavr": {
@@ -62,6 +69,12 @@
       "owner": "platformio",
       "version": "~2.20701.0"
     },
+    "framework-mbed-ce": {
+      "type": "framework",
+      "optional": true,
+      "owner": "mbed-ce-project",
+      "version": ">=6.99"
+    }, 
     "tool-teensy": {
       "type": "uploader",
       "optional": true,

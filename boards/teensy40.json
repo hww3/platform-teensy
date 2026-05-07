@@ -26,7 +26,8 @@
   },
   "frameworks": [
     "arduino",
-    "zephyr"
+    "zephyr",
+    "mbed-ce"
   ],
   "name": "Teensy 4.0",
   "upload": {

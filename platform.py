@@ -37,7 +37,10 @@ class TeensyPlatform(PlatformBase):
         else:
             self.packages["toolchain-gccarmnoneeabi"]["optional"] = False
             self.packages.pop("toolchain-gccarmnoneeabi-teensy", None)
-
+        if "mbed" in frameworks or "mbed-ce" in frameworks:
+            for p in self.packages:
+                if p in ("tool-cmake", "tool-ninja"):
+                    self.packages[p]["optional"] = False  
         if "zephyr" in frameworks:
             for p in self.packages:
                 if p in ("tool-cmake", "tool-dtc", "tool-ninja"):
