@@ -35,7 +35,7 @@
       "description": "Community edition of Mbed OS, an open-source operating system designed for the Internet of Things.",
       "homepage": "https://mbed-ce.dev",
       "title": "Mbed CE"
-     },
+     }
   },
   "packages": {
     "toolchain-atmelavr": {
